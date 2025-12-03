@@ -47,7 +47,7 @@ public class JavaRover {
             else if (lateral == Lateral.RIGHT) {
                 currentDirection++;
             }
-            currentDirection = (((-1 % 4) + 4) % 4);;
+            currentDirection = (((this.direction % 4) + 4) % 4);;
             this.direction = Direction.values()[currentDirection];
         }
 
